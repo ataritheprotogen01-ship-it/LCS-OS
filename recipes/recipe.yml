@@ -17,6 +17,14 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
+  - type: gnome-extensions
+    install:
+      - Dash to Panel
+      - ArcMenu
+      - Blur my Shell
+
+  - type: gschema-overrides
+
   - type: dnf
     repos:
       copr:
@@ -43,9 +51,3 @@ modules:
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
-  - type: gnome-extension
-    install:
-    - Dash to Panel
-    - ArcMenu
-    - Blur my Shell
