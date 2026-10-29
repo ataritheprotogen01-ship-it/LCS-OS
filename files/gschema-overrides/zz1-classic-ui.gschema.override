@@ -1,0 +1,12 @@
+# Enable Minimize, Maximize, and Close buttons on all popup windows
+[org.gnome.desktop.wm.preferences]
+button-layout='appmenu:minimize,maximize,close'
+
+# Set default classic dark theme and ensure wallpaper settings are modifiable
+[org.gnome.desktop.interface]
+color-scheme='prefer-dark'
+gtk-theme='Adwaita-dark'
+
+# Configure ArcMenu to use a classic Windows-style Start Menu layout out of the box
+[org.gnome.shell.extensions.arcmenu]
+menu-layout='Windows'
